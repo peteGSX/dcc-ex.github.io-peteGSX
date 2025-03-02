@@ -6,7 +6,7 @@
 <meta content="DCC-EX is a team of dedicated enthusiasts producing, easy to use, affordable, do-it-yourself, open source, DCC solutions to allow you to run your complete model railroad layout." name="description" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Release Process &mdash; DCC-EX Model Railroading  documentation</title>
+  <title>Versioning and the Release Process &mdash; DCC-EX Model Railroading  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
@@ -588,7 +588,7 @@
 <li class="toctree-l4"><a class="reference internal" href="website/publishing-news.html">Publishing DCC-EX News Posts</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Release Process</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Versioning and the Release Process</a></li>
 </ul>
 </li>
 </ul>
@@ -613,7 +613,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index-contributing.html">Donating &amp; Contributing</a></li>
           <li class="breadcrumb-item"><a href="index.html">Contributing - Helping the DCC-EX Team</a></li>
-      <li class="breadcrumb-item active">Release Process</li>
+      <li class="breadcrumb-item active">Versioning and the Release Process</li>
   
     
       <li class="wy-breadcrumbs-aside">
@@ -628,38 +628,109 @@
            <div itemprop="articleBody">
              
 <p><a class="image-product-logo-float-right reference internal" href="../../_images/product-logo-contributing.png"><img alt="Contributing" class="image-product-logo-float-right" src="../../_images/product-logo-contributing.png" style="width: 320.0px; height: 64.0px;" /></a></p>
-<section id="release-process">
-<h1>Release Process<a class="headerlink" href="#release-process" title="Link to this heading"></a></h1>
+<section id="versioning-and-the-release-process">
+<h1>Versioning and the Release Process<a class="headerlink" href="#versioning-and-the-release-process" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="../../begin/levels.html#levels-of-difficulty-or-technical-complexity"><img alt="Suitable For Level:" src="../../_images/level-suitable-for.png" style="width: 110.4px; height: 36.0px;" /></a> <a class="reference external" href="../../begin/levels.html#engineer"><img alt="Engineer Hat" src="../../_images/engineer-level.png" style="width: 135.6px; height: 36.0px;" /></a> <a href="../../support/index.html#contact-support-options" title="Request help or support"><img src="../../_static/images/buttons/support.png" style="height: 33px;" /></a></p>
 <aside class="sidebar-on-this-page sidebar">
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On this page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#release-requirements" id="id1">Release Requirements</a></p></li>
-<li><p><a class="reference internal" href="#creating-a-release" id="id2">Creating a Release</a></p></li>
+<li><p><a class="reference internal" href="#software-versioning" id="id1">Software Versioning</a></p>
+<ul>
+<li><p><a class="reference internal" href="#github-tags-vs-releases" id="id2">GitHub Tags vs. Releases</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#release-requirements" id="id3">Release Requirements</a></p></li>
+<li><p><a class="reference internal" href="#creating-a-release" id="id4">Creating a Release</a></p>
+<ul>
+<li><p><a class="reference internal" href="#archive-file-structure" id="id5">Archive File Structure</a></p></li>
+<li><p><a class="reference internal" href="#create-the-release" id="id6">Create the Release</a></p></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
-<p>This page outlines how to perform a release, as well as provides guidelines on what is required before a release can be done.</p>
-<section id="release-requirements">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Release Requirements</a><a class="headerlink" href="#release-requirements" title="Link to this heading"></a></h2>
-<p>These items must be complete prior to creating a release.</p>
+<p>This page outlines how to determine version numbers, create a release, and outlines what is required before a release can be done.</p>
+<section id="software-versioning">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Software Versioning</a><a class="headerlink" href="#software-versioning" title="Link to this heading"></a></h2>
+<p>The <a href="../../index.html"><span class="dccex-suffix">DCC-</span><span class="dccex-prefix">EX</span></a> team utilise semantic versioning for all official software releases, which is associated with either a GitHub tag or a GitHub release.</p>
+<p>This means all version numbers are in the format “X.Y.Z”, and GitHub tags are in the format “vX.Y.Z-[Prod|Devel]”, where:</p>
 <ul class="simple">
-<li><p>Version is up to date including notes of what has changed</p></li>
-<li><p>Release notes up to date with the changes in this release</p></li>
+<li><p>X is the <strong>major</strong> version number</p></li>
+<li><p>Y is the <strong>minor</strong> version number</p></li>
+<li><p>Z is the <strong>patch</strong> version number</p></li>
+<li><p>Select either suffix “Prod” for a Production release, or “Devel” for a Development release</p></li>
+</ul>
+<p>For example, a production version of <a href="../../ex-commandstation/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span></a> might be “5.4.6”, which will have the GitHub tag “v5.4.6-Prod”, where as a development version “5.5.1” would have a GitHub tag “v5.5.5-Devel”.</p>
+<p>These are the guidelines for determining version numbers:</p>
+<ul class="simple">
+<li><p>Development versions have an odd <strong>minor</strong> version number, Production versions are even numbers (eg. X.1.Z is a development version, X.0.Z is production).</p></li>
+<li><p>Increment the <strong>major</strong> version number if a new feature is going to introduce a <strong>breaking change</strong> that is not backwards compatible.</p></li>
+<li><p>Increment the <strong>minor</strong> version number when adding new features that are backwards compatible.</p></li>
+<li><p>Increment the <strong>patch</strong> version number when making minor fixes that don’t have overall functional impacts.</p></li>
+</ul>
+<p>So, when fixing a bug a user has reported, you should only increment the <strong>patch</strong> number, whereas introducing a new feature that lets the rest of the software function normally should have a <strong>minor</strong> version increment.</p>
+<p>Any time existing functionality is no longer compatible with the new version, the <strong>major</strong> version must be incremented.</p>
+<section id="github-tags-vs-releases">
+<h3><a class="toc-backref" href="#id2" role="doc-backlink">GitHub Tags vs. Releases</a><a class="headerlink" href="#github-tags-vs-releases" title="Link to this heading"></a></h3>
+<p>Every GitHub release has an associated tag, but not every tag has an associated release. A tag simply represents the state of the GitHub repository at a specific point in time (it will be associated with a commit), whereas a relase also has an associated description and attached archive files for users to download.</p>
+<p>Tagging independently of a release is helpful for development versions for users to be referred to, but ideally each production tag should also be a release.</p>
+<p><a href="../../ex-installer/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;Installer</span></a> uses tags, not releases, so users can select a published tag to use, whereas for users using the Arduino IDE, they need to download the archives from a release.</p>
+</section>
+</section>
+<section id="release-requirements">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Release Requirements</a><a class="headerlink" href="#release-requirements" title="Link to this heading"></a></h2>
+<p>These items are mandatory for creating a release:</p>
+<ul class="simple">
+<li><p>Where applicable, files such as “Version.h” must be up to date with notes on what has changed</p></li>
+<li><p>Release notes must be up to date with the changes in the release</p></li>
 <li><p>A DCC-EX News article has been prepared</p></li>
-<li><p>The majority of the DCC-EX leadership team have agreed the release is ready</p></li>
+<li><p>The lead developer for the associated product and the majority of the DCC-EX leadership team have agreed the release is ready</p></li>
 </ul>
 </section>
 <section id="creating-a-release">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">Creating a Release</a><a class="headerlink" href="#creating-a-release" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Creating a Release</a><a class="headerlink" href="#creating-a-release" title="Link to this heading"></a></h2>
+<p>For products that are intended to work with the Arduino IDE, archive files (both .zip and .tar.gz) must be attached to the release with the correct folder structure the Arduino IDE expects.</p>
+<section id="archive-file-structure">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Archive File Structure</a><a class="headerlink" href="#archive-file-structure" title="Link to this heading"></a></h3>
+<p>The folder containing the files must be the exact same name (including case) of the main “.ino” file, minus the .ino extension.</p>
+<p>Ideally, the .zip or .tar.gz file will contain the version in the name, and will contain a folder with the correct name, which contains the repository files.</p>
+<p>For <a href="../../ex-commandstation/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span></a>, this means the archive files for version 5.4.6 would be:</p>
 <ul class="simple">
-<li><p>Navigate to the GitHub repository</p></li>
-<li><p>If the release is to be created for an existing tagged version, go to that tagged version (how?)</p></li>
-<li><p>Download the ZIP of the repository</p></li>
-<li></li>
-<li><p>Navigate to the Releases tab</p></li>
+<li><p>CommandStation-EX-5.4.6-Prod.zip</p></li>
+<li><p>CommandStation-EX-5.4.6-Prod.tar.gz</p></li>
 </ul>
+<p>Each of these would contain a folder called <code class="docutils literal notranslate"><span class="pre">CommandStation-EX</span></code> as this matches the <code class="docutils literal notranslate"><span class="pre">CommandStation-EX.ino</span></code> filename without the extension, satisfying the Arduino IDE requirement.</p>
+<p>This folder would contain all files as shown in this image from 7Zip on Windows. Note the archive filename is <code class="docutils literal notranslate"><span class="pre">CommandStation-EX-5.4.6-Prod.zip</span></code> which contains the folder <code class="docutils literal notranslate"><span class="pre">CommandStation-EX</span></code>, and this folder contains all the repository files.</p>
+<a class="reference internal image-reference" href="../../_images/release-archive-contents.png"><img alt="../../_images/release-archive-contents.png" src="../../_images/release-archive-contents.png" style="width: 710.5px; height: 363.5px;" /></a>
+</section>
+<section id="create-the-release">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Create the Release</a><a class="headerlink" href="#create-the-release" title="Link to this heading"></a></h3>
+<p>This is the process to create a new, untagged release:</p>
+<ol class="arabic simple">
+<li><p>Navigate to the GitHub repository in your favourite browser.</p></li>
+<li><p>Download the ZIP of the repository by clicking the <code class="docutils literal notranslate"><span class="pre">Code</span></code> button and selecting <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">ZIP</span></code>.</p></li>
+<li><p>Create the appropriate .zip and .tar.gz archive files as outlined in <a class="reference internal" href="#archive-file-structure"><span class="std std-ref">Archive File Structure</span></a> using your favourite archiving software.</p></li>
+<li><p>Navigate to the Releases tab in GitHub and click <code class="docutils literal notranslate"><span class="pre">Draft</span> <span class="pre">new</span> <span class="pre">release</span></code>.</p></li>
+<li><p>Create the new tag based on <a class="reference internal" href="#software-versioning"><span class="std std-ref">Software Versioning</span></a>.</p></li>
+<li><p>Enter an appropriate title and add some release information, ideally linking to release notes, a <a href="../../index.html"><span class="dccex-suffix">DCC-</span><span class="dccex-prefix">EX</span></a> news article, or some other reference containing details.</p></li>
+<li><p>For a Development release, untick <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">latest</span> <span class="pre">release</span></code> and tick <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">pre-release</span></code>.</p></li>
+<li><p>For a Production release, tick <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">latest</span> <span class="pre">release</span></code> provided it is indeed the latest release.</p></li>
+<li><p>Attach both archive files created in step 3.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Publish</span> <span class="pre">release</span></code>.</p></li>
+</ol>
+<p>If, instead, you need to create a release for an existing tag, this is the process:</p>
+<p>1. Navigate to the GitHub repository in your favourite browser.
+3. Click <code class="docutils literal notranslate"><span class="pre">Tags</span></code> in the code window and locate the tag this release should be associated with.
+4. Download the source code associated with the tag from the <code class="docutils literal notranslate"><span class="pre">Assets</span></code> section.
+5. Click <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">release</span> <span class="pre">from</span> <span class="pre">tag</span></code>.
+6. Create the appropriate .zip and .tar.gz archive files as outlined in <a class="reference internal" href="#archive-file-structure"><span class="std std-ref">Archive File Structure</span></a> using your favourite archiving software and the source code as downloaded in step 4.
+7. Enter an appropriate title and add some release information, ideally linking to release notes, a <a href="../../index.html"><span class="dccex-suffix">DCC-</span><span class="dccex-prefix">EX</span></a> news article, or some other reference containing details.
+8. For a Development release, untick <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">latest</span> <span class="pre">release</span></code> and tick <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">pre-release</span></code>.
+9. For a Production release, tick <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">latest</span> <span class="pre">release</span></code> provided it is indeed the latest release.
+10. Attach both archive files.
+11. Click <code class="docutils literal notranslate"><span class="pre">Publish</span> <span class="pre">release</span></code>.</p>
+</section>
 </section>
 </section>
 
@@ -684,7 +755,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f52bd8efb50>
+    <jinja2.runtime.BlockReference object at 0x7f2064206f80>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
