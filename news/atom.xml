@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://dcc-ex.com</id>
   <title>DCC-EX News</title>
-  <updated>2025-05-24T23:44:10.382726+00:00</updated>
+  <updated>2025-05-24T23:44:54.488190+00:00</updated>
   <link href="https://dcc-ex.com"/>
   <link href="https://dcc-ex.com/news/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
@@ -79,13 +79,13 @@
   </entry>
   <entry>
     <id>https://dcc-ex.com/news/posts/20250301.html</id>
-    <title>Announcing EX-CommandStation 5.4.0</title>
+    <title>Announcing EX-CommandStation 5.4.6</title>
     <updated>2025-03-01T00:00:00+00:00</updated>
     <author>
       <name>peteGSX</name>
     </author>
     <content type="html">&lt;img alt="DCC-EX News" class="image-product-logo-float-right" src="https://dcc-ex.com/_images/product-logo-news.png" style="width: 320.0px; height: 64.0px;" /&gt;
-&lt;section id="announcing-ex-commandstation-5-4-0"&gt;
+&lt;section id="announcing-ex-commandstation-5-4-6"&gt;
 
 &lt;p&gt;The &lt;a href="../../index.html"&gt;&lt;span class="dccex-suffix"&gt;DCC-&lt;/span&gt;&lt;span class="dccex-prefix"&gt;EX&lt;/span&gt;&lt;/a&gt; team are excited to announce a new Production release of &lt;a href="../../ex-commandstation/index.html"&gt;&lt;span class="ex-prefix"&gt;EX&lt;/span&gt;&lt;span class="ex-suffix"&gt;&amp;#8209;CommandStation&lt;/span&gt;&lt;/a&gt; with version 5.4.0 being made available today. As usual, this release includes a raft of &lt;strong&gt;new features and enhancements&lt;/strong&gt; to bring even more capability and joy to your digital model railroading experience! We’re also announcing changes to our &lt;strong&gt;supported hardware platforms&lt;/strong&gt;.&lt;/p&gt;
 &lt;section id="new-features-and-enhancements"&gt;
