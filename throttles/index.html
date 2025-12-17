@@ -13,7 +13,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/dccex_theme.css?v=0b880bd3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/dccex_theme.css?v=1d02ba1c" />
       <link rel="stylesheet" type="text/css" href="../_static/css/big_picture_theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_design_overrides.css?v=de8b2a37" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
@@ -123,12 +123,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/esp32.html">ESP32 (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/stm32-nucleo.html">STMicroelectronics Nucleo (Recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano (Not recommended)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every (Deprecated)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy (Deprecated)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/samd21.html">Microchip SAMD21 (Deprecated)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/motor-boards.html">Supported Motor Drivers</a><ul>
@@ -289,6 +290,70 @@
 <li class="toctree-l2"><a class="reference internal" href="../exrail/getting-started.html">Sequences - an Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/examples.html">Example Objects and Sequences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/tips.html">Tips and Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exrail/cookbooks/index.html">Cookbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/startup-poweron.html">Power On at Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/startup-set-track.html">Define Track Modes at Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/dc-tracks.html">Set a track to DC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/roster-similar-locos.html">Roster Entries for Similar Sound Locos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/index.html">Editing - Tips and Tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/multi-files.html">Multiple Files in EXRAIL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/multiple-command-stations.html">Maintaining multiple command stations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/naming-a-sequence.html">Naming sequences for easy commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/using-call-return.html">Using CALL and RETURN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/using-macros.html">Using C++ Macros</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/driving-trains/index.html">Driving Trains</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/basic.html">Basic driving functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/functions.html">Loco Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/automations.html">AUTOMATIONS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/simple-shuttle.html">Simple shuttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/improved-shuttle.html">Improved shuttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/passing-loop.html">Passing loop shuttle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/turnouts/index.html">Turnouts/Points</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-dcc-turnouts.html">Defining DCC turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-pin-turnouts.html">Defining PIN turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-servo-turnouts.html">Defining Servo turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/facing-turnouts.html">Facing turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/animated-turnouts.html">Animated Turnouts/Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/toggle-with-button.html">Toggle turnouts/points with button or sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/route-button-control.html">Manipulating Route Buttons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/vpins.html">Virtual Bitmap device pins (VPINs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/animation-sensors.html">Buttons and Switches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/estop-button.html">Emergency stop button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/neopixels/index.html">NeoPixel Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/neopixels/neopixels.html">Setting neopixels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/neopixels/signals.html">Neopixel signals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/flashing-signals.html">Signals with flashing (Blink)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/index.html">Flags and Latches</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/flags.html">Flags, Counters and Bitmaps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/latches.html">Latches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/stash.html">Using STASH to remember where locos are parked</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/advanced/index.html">Advanced EXRAIL Sequences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/display-locos-on-oled.html">Display Loco speeds on OLED (Advanced)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/analog-sensors.html">Analog Sensors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/command-filter.html">Command Filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/tca8418-keyboard.html">TCA8418 keyboard scanner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/passing-locos-between-sequences.html">Passing locos between sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/timecontrol.html">Time Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/various-devices/index.html">Supporting Various Additional Devices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/duinoNodes.html">Lew’s Duino Gear boards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/tm-1638.html">TM1638 Buttons, leds and 7 segment display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/trainbrains.html">Trainbrains Devices</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/exrail-command-reference.html">EXRAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/about.html">About and History</a></li>
 </ul>
@@ -346,6 +411,7 @@
 <li class="toctree-l3"><a class="reference internal" href="software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/dccpp-cab.html">DCCpp CAB (android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/dccex-cab.html">DCC-EX CAB (Android and iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software/withrottle-cab.html">WiThrottle Cab (Android and iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/dccpp-throttle.html">DCC++ Throttle (android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/digitrainspro.html">DigiTrainsPro (Android, iOS, Windows)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/locontrol.html">Locontrol (iOS)</a></li>
@@ -357,6 +423,7 @@
 <li class="toctree-l3"><a class="reference internal" href="software/trainnavigator.html">TrainNavigator (iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/train-throttle.html">Train Throttle (Windows, Mac, iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/withrottle.html">WiThrottle (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software/dcc-commander.html">DCC Commander (iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/android-apps-on-windows.html">Android Apps on Windows</a></li>
 </ul>
 </li>
@@ -446,12 +513,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/esp32.html">ESP32 (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/stm32-nucleo.html">STMicroelectronics Nucleo (Recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano (Not recommended)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every (Deprecated)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy (Deprecated)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/samd21.html">Microchip SAMD21 (Deprecated)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/pin-vpin-allocations.html">Default Pin/VPin Allocations and Recommendations</a></li>
@@ -630,26 +698,26 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On this page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#throttles-by-client-technology" id="id10">Throttles - By Client Technology</a></p>
+<li><p><a class="reference internal" href="#throttles-by-client-technology" id="id15">Throttles - By Client Technology</a></p>
 <ul>
-<li><p><a class="reference internal" href="#web-browser-windows-osx-linux" id="id11">Web Browser (Windows, OSX, Linux)</a></p></li>
-<li><p><a class="reference internal" href="#android-phones-and-tablets" id="id12">Android (Phones and Tablets)</a></p></li>
-<li><p><a class="reference internal" href="#apple-ios-phones-and-tablets" id="id13">Apple iOS (Phones and Tablets)</a></p></li>
-<li><p><a class="reference internal" href="#dedicated-hardware" id="id14">Dedicated Hardware</a></p></li>
-<li><p><a class="reference internal" href="#personal-computers" id="id15">Personal Computers</a></p></li>
+<li><p><a class="reference internal" href="#web-browser-windows-osx-linux" id="id16">Web Browser (Windows, OSX, Linux)</a></p></li>
+<li><p><a class="reference internal" href="#android-phones-and-tablets" id="id17">Android (Phones and Tablets)</a></p></li>
+<li><p><a class="reference internal" href="#apple-ios-phones-and-tablets" id="id18">Apple iOS (Phones and Tablets)</a></p></li>
+<li><p><a class="reference internal" href="#dedicated-hardware" id="id19">Dedicated Hardware</a></p></li>
+<li><p><a class="reference internal" href="#personal-computers" id="id20">Personal Computers</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#throttles-by-communication-technology" id="id16">Throttles - By Communication technology</a></p>
+<li><p><a class="reference internal" href="#throttles-by-communication-technology" id="id21">Throttles - By Communication technology</a></p>
 <ul>
-<li><p><a class="reference internal" href="#general" id="id17">General</a></p></li>
-<li><p><a class="reference internal" href="#dcc-ex-dcc-ex-native-commands" id="id18">DCC-EX (DCC-EX Native Commands)</a></p></li>
-<li><p><a class="reference internal" href="#withrottle-protocol-based-throttles" id="id19">WiThrottle Protocol Based Throttles</a></p></li>
-<li><p><a class="reference internal" href="#usb-based-throttles" id="id20">USB Based Throttles</a></p></li>
-<li><p><a class="reference internal" href="#jmri-web-server-based-throttles" id="id21">JMRI Web Server Based Throttles</a></p></li>
+<li><p><a class="reference internal" href="#general" id="id22">General</a></p></li>
+<li><p><a class="reference internal" href="#dcc-ex-dcc-ex-native-commands" id="id23">DCC-EX (DCC-EX Native Commands)</a></p></li>
+<li><p><a class="reference internal" href="#withrottle-protocol-based-throttles" id="id24">WiThrottle Protocol Based Throttles</a></p></li>
+<li><p><a class="reference internal" href="#usb-based-throttles" id="id25">USB Based Throttles</a></p></li>
+<li><p><a class="reference internal" href="#jmri-web-server-based-throttles" id="id26">JMRI Web Server Based Throttles</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#table-throttles-by-technology" id="id22">Table - Throttles by Technology</a></p></li>
-<li><p><a class="reference internal" href="#reference" id="id23">Reference</a></p></li>
+<li><p><a class="reference internal" href="#table-throttles-by-technology" id="id27">Table - Throttles by Technology</a></p></li>
+<li><p><a class="reference internal" href="#reference" id="id28">Reference</a></p></li>
 </ul>
 </nav>
 </aside>
@@ -662,15 +730,15 @@
 <p>For additional options for throttles and how to choose one, please read the <a class="reference internal" href="../ex-commandstation/advanced-setup/controllers.html"><span class="doc">Advanced Options - Throttles Page</span></a></p>
 <hr class="docutils" />
 <section id="throttles-by-client-technology">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Throttles - By Client Technology</a><a class="headerlink" href="#throttles-by-client-technology" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Throttles - By Client Technology</a><a class="headerlink" href="#throttles-by-client-technology" title="Link to this heading"></a></h2>
 <section id="web-browser-windows-osx-linux">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Web Browser (Windows, OSX, Linux)</a><a class="headerlink" href="#web-browser-windows-osx-linux" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Web Browser (Windows, OSX, Linux)</a><a class="headerlink" href="#web-browser-windows-osx-linux" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="../ex-webthrottle/index.html"><span class="doc">EX-Web-Throttle (Web Browser)</span></a> <em>recommended</em></p></li>
 </ul>
 </section>
 <section id="android-phones-and-tablets">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Android (Phones and Tablets)</a><a class="headerlink" href="#android-phones-and-tablets" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Android (Phones and Tablets)</a><a class="headerlink" href="#android-phones-and-tablets" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="software/engine-driver.html"><span class="doc">Engine Driver (Android)</span></a> <em>recommended</em></p></li>
 <li><p><a class="reference internal" href="software/cab-engineer.html"><span class="doc">Cab Engineer: DCC Throttle (Andriod)</span></a></p></li>
@@ -679,10 +747,11 @@
 <li><p><a class="reference internal" href="software/digitrainspro.html"><span class="doc">DigiTrainsPro (Android, iOS, Windows)</span></a> <em>- Requires JMRI</em></p></li>
 <li><p><a class="reference internal" href="software/rtdrive-dccpp.html"><span class="doc">RtDtive DCC++ (Android)</span></a></p></li>
 <li><p><a class="reference internal" href="software/dccex-cab.html"><span class="doc">DCC-EX CAB (iOS and Android)</span></a></p></li>
+<li><p><a class="reference internal" href="software/withrottle-cab.html"><span class="doc">WiThrottle Cab (iOS and Android)</span></a></p></li>
 </ul>
 </section>
 <section id="apple-ios-phones-and-tablets">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink">Apple iOS (Phones and Tablets)</a><a class="headerlink" href="#apple-ios-phones-and-tablets" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Apple iOS (Phones and Tablets)</a><a class="headerlink" href="#apple-ios-phones-and-tablets" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="software/digitrainspro.html"><span class="doc">DigiTrainsPro (Android, iOS, Windows)</span></a> <em>- Requires JMRI</em></p></li>
 <li><p><a class="reference internal" href="software/locontrol.html"><span class="doc">Locontrol (iOS)</span></a></p></li>
@@ -691,15 +760,18 @@
 <li><p><a class="reference internal" href="software/throttlecard.html"><span class="doc">ThrottleCard (iOS)</span></a></p></li>
 <li><p><a class="reference internal" href="software/trainnavigator.html"><span class="doc">TrainNavigator (iOS)</span></a></p></li>
 <li><p><a class="reference internal" href="software/dccex-cab.html"><span class="doc">DCC-EX CAB (iOS and Android)</span></a></p></li>
+<li><p><a class="reference internal" href="software/withrottle-cab.html"><span class="doc">WiThrottle Cab (iOS and Android)</span></a></p></li>
 <li><p><a class="reference internal" href="software/withrottle.html"><span class="doc">WiThrottle (iOS)</span></a></p></li>
+<li><p><a class="reference internal" href="software/dcc-commander.html"><span class="doc">DCC Commander (iOS)</span></a></p></li>
 </ul>
 </section>
 <section id="dedicated-hardware">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Dedicated Hardware</a><a class="headerlink" href="#dedicated-hardware" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Dedicated Hardware</a><a class="headerlink" href="#dedicated-hardware" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="hardware/streamdeck.html"><span class="doc">Elgato Stream Deck (Physical)</span></a></p></li>
 <li><p><a class="reference internal" href="hardware/ex-t3-wifi.html"><span class="doc">EX-T3-WiFi (T3 = Tactile Touch Throttle) (physical)</span></a></p></li>
 <li><p><a class="reference external" href="https://github.com/1fatgmc/HandCab/tree/main">HandCab (Physical)</a></p></li>
+<li><p><a class="reference external" href="https://www.esu.eu/en/products/digital-control/mobile-control-pro/">ESU Mobile Control Pro (Physical)</a></p></li>
 <li><p><a class="reference internal" href="hardware/lodi-con-wifi-throttle.html"><span class="doc">LoDi-Con WiFi Throttle</span></a></p></li>
 <li><p><a class="reference internal" href="hardware/minithrottle.html"><span class="doc">miniThrottle (Physical)</span></a></p></li>
 <li><p><a class="reference internal" href="hardware/uwt50.html"><span class="doc">TCS UWT-50 (Physical)</span></a></p></li>
@@ -709,31 +781,31 @@
 </ul>
 </section>
 <section id="personal-computers">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Personal Computers</a><a class="headerlink" href="#personal-computers" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Personal Computers</a><a class="headerlink" href="#personal-computers" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="../ex-webthrottle/index.html"><span class="doc">EX-WebThrottle (Web Browser)</span></a> <em>recommended</em></p></li>
+<li><p><a class="reference internal" href="../ex-webthrottle/index.html"><span class="doc">EX-WebThrottle (Windows, MacOS, Linux)</span></a> <em>recommended</em></p></li>
 <li><p><a class="reference internal" href="software/digitrainspro.html"><span class="doc">DigiTrainsPro (Android, iOS, Windows)</span></a> <em>- Requires JMRI</em></p></li>
-<li><p><a class="reference internal" href="software/jmri.html"><span class="doc">JMRI (Windows, iOS, Linux)</span></a></p></li>
+<li><p><a class="reference internal" href="software/jmri.html"><span class="doc">JMRI (Windows, MacOS, Linux)</span></a></p></li>
 <li><p><a class="reference internal" href="software/railroad-automation.html"><span class="doc">Railroad Automation</span></a> <em>- Requires IoTT Red Hat</em></p></li>
-<li><p><a class="reference internal" href="software/train-throttle.html"><span class="doc">Train Throttle</span></a></p></li>
-<li><p><a class="reference internal" href="software/throttlecard.html"><span class="doc">ThrottleCard (M1 Mac)</span></a> <em>- Requires WiThrottle server</em></p></li>
+<li><p><a class="reference internal" href="software/train-throttle.html"><span class="doc">Train Throttle (Windows, iOS)</span></a></p></li>
+<li><p><a class="reference internal" href="software/throttlecard.html"><span class="doc">ThrottleCard (MacOS, iOS)</span></a> <em>- Requires WiThrottle server</em></p></li>
 </ul>
 <p>Note: The Android throttle apps listed above can be made to made to run on Windows PCs. See <a class="reference internal" href="software/android-apps-on-windows.html"><span class="doc">Running Android apps on Microsoft Windows</span></a>.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="throttles-by-communication-technology">
-<h2><a class="toc-backref" href="#id16" role="doc-backlink">Throttles - By Communication technology</a><a class="headerlink" href="#throttles-by-communication-technology" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">Throttles - By Communication technology</a><a class="headerlink" href="#throttles-by-communication-technology" title="Link to this heading"></a></h2>
 <p><a href="../ex-commandstation/index.html"><span class="ex-prefix">EX</span><span class="ex-suffix">&#8209;CommandStation</span></a> can use a number of different technologies to communicate with a throttle. While each technology has advantages and disadvantages, none is substantially better that the others.</p>
 <section id="general">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">General</a><a class="headerlink" href="#general" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">General</a><a class="headerlink" href="#general" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="protocols.html"><span class="doc">WiThrottle Server, Web Server, DCC-EX Native Commands Explained</span></a></p></li>
 <li><p><a class="reference internal" href="connect_wifi_throttle_via_usb.html"><span class="doc">Connecting WiFi Throttles via USB</span></a></p></li>
 </ul>
 </section>
 <section id="dcc-ex-dcc-ex-native-commands">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">DCC-EX (DCC-EX Native Commands)</a><a class="headerlink" href="#dcc-ex-dcc-ex-native-commands" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">DCC-EX (DCC-EX Native Commands)</a><a class="headerlink" href="#dcc-ex-dcc-ex-native-commands" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="../ex-webthrottle/index.html"><span class="doc">EX-WebThrottle (Web Browser)</span></a>  <em>recommended</em></p></li>
 <li><p><a class="reference internal" href="software/engine-driver.html"><span class="doc">Engine Driver (Android)</span></a>  <em>recommended</em></p></li>
@@ -745,47 +817,50 @@
 <li><p><a class="reference internal" href="software/trainnavigator.html"><span class="doc">TrainNavigator (iOS)</span></a></p></li>
 <li><p><a class="reference internal" href="software/jmri.html"><span class="doc">JMRI (Win, macOS, Linux)</span></a></p></li>
 <li><p><a class="reference internal" href="hardware/ex-t3-wifi.html"><span class="doc">EX-T3-WiFi (T3 = Tactile Touch Throttle) (Physical)</span></a></p></li>
-<li><p><a class="reference internal" href="hardware/minithrottle.html"><span class="doc">miniThrottle (Physical)</span></a> <br /> <br /></p></li>
-<li><p><a class="reference internal" href="hardware/dccexcontroller.html"><span class="doc">DccExController (Physical)</span></a>  - Support Discontinued</p></li>
+<li><p><a class="reference internal" href="hardware/minithrottle.html"><span class="doc">miniThrottle (Physical DIY)</span></a></p></li>
+<li><p><a class="reference internal" href="software/dcc-commander.html"><span class="doc">DCC Commander (iOS)</span></a> <br /> <br /></p></li>
+<li><p><a class="reference internal" href="hardware/dccexcontroller.html"><span class="doc">DccExController (Physical DIY)</span></a>  - Support Discontinued <br /> <br /></p></li>
 <li><p>See also <a class="reference internal" href="native-protocol-library.html"><span class="doc">DCC-EX Native command library - DCCEXProtocol</span></a></p></li>
 </ul>
 </section>
 <section id="withrottle-protocol-based-throttles">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">WiThrottle Protocol Based Throttles</a><a class="headerlink" href="#withrottle-protocol-based-throttles" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id24" role="doc-backlink">WiThrottle Protocol Based Throttles</a><a class="headerlink" href="#withrottle-protocol-based-throttles" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="software/engine-driver.html"><span class="doc">Engine Driver (Android)</span></a>  <em>recommended</em></p></li>
 <li><p><a class="reference internal" href="software/cab-engineer.html"><span class="doc">Cab Engineer: DCC Throttle (Android)</span></a></p></li>
 <li><p><a class="reference internal" href="software/locontrol.html"><span class="doc">Locontrol (iOS)</span></a></p></li>
+<li><p><a class="reference internal" href="software/withrottle-cab.html"><span class="doc">WiThrottle Cab (iOS and Android)</span></a></p></li>
 <li><p><a class="reference internal" href="software/withrottle.html"><span class="doc">WiThrottle (iOS)</span></a></p></li>
 <li><p><a class="reference internal" href="software/srcpclient.html"><span class="doc">SRCP Client (iOS)</span></a></p></li>
 <li><p><a class="reference internal" href="software/train-driver.html"><span class="doc">Train Driver (iOS)</span></a></p></li>
 <li><p><a class="reference internal" href="software/throttlecard.html"><span class="doc">ThrottleCard (iOS)</span></a> <br /> <br /></p></li>
 <li><p><a class="reference internal" href="hardware/streamdeck.html"><span class="doc">Elgato Stream Deck (Physical)</span></a></p></li>
-<li><p><a class="reference external" href="https://github.com/1fatgmc/HandCab/tree/main">HandCab (Physical)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/1fatgmc/HandCab/tree/main">HandCab (Physical DIY)</a></p></li>
+<li><p><a class="reference external" href="https://www.esu.eu/en/products/digital-control/mobile-control-pro/">ESU Mobile Control Pro (Physical)</a></p></li>
 <li><p><a class="reference internal" href="hardware/lodi-con-wifi-throttle.html"><span class="doc">LoDi-Con WiFi Throttle (Physical)</span></a></p></li>
-<li><p><a class="reference internal" href="hardware/minithrottle.html"><span class="doc">miniThrottle (Physical)</span></a></p></li>
-<li><p><a class="reference internal" href="hardware/uwt50.html"><span class="doc">TCS UWT-50 (Physical)</span></a></p></li>
-<li><p><a class="reference internal" href="hardware/witcontroller.html"><span class="doc">WiTcontroller (Physical)</span></a></p></li>
+<li><p><a class="reference internal" href="hardware/minithrottle.html"><span class="doc">miniThrottle (Physical DIY)</span></a></p></li>
+<li><p><a class="reference internal" href="hardware/uwt50.html"><span class="doc">TCS UWT-50 (Physical DIY)</span></a></p></li>
+<li><p><a class="reference internal" href="hardware/witcontroller.html"><span class="doc">WiTcontroller (Physical DIY)</span></a></p></li>
 </ul>
 </section>
 <section id="usb-based-throttles">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink">USB Based Throttles</a><a class="headerlink" href="#usb-based-throttles" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">USB Based Throttles</a><a class="headerlink" href="#usb-based-throttles" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="../ex-webthrottle/index.html"><span class="doc">EX-WebThrottle</span></a></p></li>
-<li><p><a class="reference internal" href="hardware/mybluepillthrottle.html"><span class="doc">myBluePillThrottle</span></a> <br /> <br /></p></li>
+<li><p><a class="reference internal" href="../ex-webthrottle/index.html"><span class="doc">EX-WebThrottle (Windows, MacOS, Linux)</span></a></p></li>
+<li><p><a class="reference internal" href="hardware/mybluepillthrottle.html"><span class="doc">myBluePillThrottle (Physical DIY)</span></a> <br /> <br /></p></li>
 <li><p>Also see: <a class="reference internal" href="connect_wifi_throttle_via_usb.html"><span class="doc">Connecting WiFi Throttles via USB</span></a></p></li>
 </ul>
 </section>
 <section id="jmri-web-server-based-throttles">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">JMRI Web Server Based Throttles</a><a class="headerlink" href="#jmri-web-server-based-throttles" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id26" role="doc-backlink">JMRI Web Server Based Throttles</a><a class="headerlink" href="#jmri-web-server-based-throttles" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="software/digitrainspro.html"><span class="doc">DigiTrainsPro (Android)</span></a></p></li>
+<li><p><a class="reference internal" href="software/digitrainspro.html"><span class="doc">DigiTrainsPro (Android, iOS, Windows)</span></a></p></li>
 </ul>
 </section>
 </section>
 <hr class="docutils" />
 <section id="table-throttles-by-technology">
-<h2><a class="toc-backref" href="#id22" role="doc-backlink">Table - Throttles by Technology</a><a class="headerlink" href="#table-throttles-by-technology" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id27" role="doc-backlink">Table - Throttles by Technology</a><a class="headerlink" href="#table-throttles-by-technology" title="Link to this heading"></a></h2>
 <table class="command-table docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head" rowspan="3"><p> Name           </p></th>
@@ -976,7 +1051,7 @@
 <td></td>
 <td><p>X</p></td>
 <td></td>
-<td></td>
+<td><p>X</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="software/train-throttle.html"><span class="doc">Train Throttle</span></a></p></td>
 <td><p>Free / Paid</p></td>
@@ -1007,7 +1082,7 @@
 <td></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="software/withrottle.html"><span class="doc">WiThrottle</span></a></p></td>
-<td><p>Free / Paid</p></td>
+<td><p>Free <a class="footnote-reference brackets" href="#t7" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a> / Paid</p></td>
 <td><p>WiFi</p></td>
 <td><p>WiT</p></td>
 <td><p>App</p></td>
@@ -1033,6 +1108,34 @@
 <td></td>
 <td></td>
 <td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="software/dcc-commander.html"><span class="doc">DCC Commander</span></a></p></td>
+<td><p>Free <a class="footnote-reference brackets" href="#t8" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a> / Paid</p></td>
+<td><p>WiFi</p></td>
+<td><p>Native</p></td>
+<td><p>App</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="software/withrottle-cab.html"><span class="doc">WiThrottle Cab</span></a></p></td>
+<td><p>Paid</p></td>
+<td><p>WiFi</p></td>
+<td><p>Native</p></td>
+<td><p>App</p></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="hardware/dccexcontroller.html"><span class="doc">DccExController</span></a></p></td>
 <td><p>Free</p></td>
@@ -1160,7 +1263,21 @@
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>LocoNet-Compatible Throttles</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.esu.eu/en/products/digital-control/mobile-control-pro/">ESU Mobile Control Pro</a></p></td>
+<td><p>Paid</p></td>
+<td><p>WiFi</p></td>
+<td><p>WiT / Native <a class="footnote-reference brackets" href="#t9" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a></p></td>
+<td><p>Device</p></td>
+<td></td>
+<td><p>X</p></td>
+<td><p>? <a class="footnote-reference brackets" href="#t9" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>X <a class="footnote-reference brackets" href="#t9" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>LocoNet-Compatible Throttles</p></td>
 <td><p>Free / Paid</p></td>
 <td><p>WiFi</p></td>
 <td><p>LocoNet</p></td>
@@ -1181,9 +1298,9 @@
 <div><p>BT = Bluetooth <br />
 Free = No additional cost for full functionality. <br />
 Paid = Payment required for any usage. <br />
-Free/Paid = Both Free and Paid versions are available. The free version has limited features. <br />
-Native = Uses the DCC-EX Native protocol/commands. <a class="footnote-reference brackets" href="#t1" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <br />
-WiT = Uses the WiThrottle protocol. <a class="footnote-reference brackets" href="#t1" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <br />
+Free/Paid = Both Free and Paid versions are available. The free version usually has limited features. <br />
+Native = Uses the DCC-EX Native protocol/commands. <a class="footnote-reference brackets" href="#t1" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <br />
+WiT = Uses the WiThrottle protocol. <a class="footnote-reference brackets" href="#t1" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <br />
 Web = Requires the use of a Web Browser. <br />
 Physical = A dedicated separate physical device. Not an app running on a standard smart device.  <br />
 Android = A phone or tablet running the Google Android operating system. <br />
@@ -1195,7 +1312,7 @@ DIY = Do it Yourself. Requires you to buy components and ‘build’ the device.
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="t1" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
-<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id8">2</a>,<a role="doc-backlink" href="#id9">3</a>)</span>
+<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id13">2</a>,<a role="doc-backlink" href="#id14">3</a>)</span>
 <p>See <a class="reference internal" href="../reference/software/withrottle-vs-native-commands.html"><span class="doc">WiThrottle Protocol VS DCC-EX Native Commands</span></a>.</p>
 </aside>
 <aside class="footnote brackets" id="t2" role="doc-footnote">
@@ -1218,11 +1335,24 @@ DIY = Do it Yourself. Requires you to buy components and ‘build’ the device.
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">6</a><span class="fn-bracket">]</span></span>
 <p>Connecting JMRI to an EX-CommandStation over WiFi works, but is not recommended and is not supported</p>
 </aside>
+<aside class="footnote brackets" id="t7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">7</a><span class="fn-bracket">]</span></span>
+<p>Free version is functionally limited. (No track power control, only one throttle and no consists/MUs.)</p>
+</aside>
+<aside class="footnote brackets" id="t8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">8</a><span class="fn-bracket">]</span></span>
+<p>Free version is advertisement supported and time limited.</p>
+</aside>
+<aside class="footnote brackets" id="t9" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id10">1</a>,<a role="doc-backlink" href="#id11">2</a>,<a role="doc-backlink" href="#id12">3</a>)</span>
+<p>ESU Mobile Control Pro is an Android device with additional hardware, so can also run the <a class="reference internal" href="software/engine-driver.html"><span class="doc">Engine Driver</span></a> app. As such it can use the DCC-EX Native protocol when connected to a DCC-EX Command Station. It uses the WiThrottle protocol when connected to a WiThrottle server. When using Engine Driver and the Native Protocol it is capable of CV programming.</p>
+</aside>
 </aside>
 </section>
 <hr class="docutils" />
 <section id="reference">
-<h2><a class="toc-backref" href="#id23" role="doc-backlink">Reference</a><a class="headerlink" href="#reference" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id28" role="doc-backlink">Reference</a><a class="headerlink" href="#reference" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="tech-reference.html"><span class="doc">Technical Reference for Throttle Developers</span></a></p></li>
 <li><p><a class="reference internal" href="native-protocol-library.html"><span class="doc">DCC-EX Native command library - DCCEXProtocol</span></a></p></li>
@@ -1253,7 +1383,7 @@ DIY = Do it Yourself. Requires you to buy components and ‘build’ the device.
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f9c231c2860>
+    <jinja2.runtime.BlockReference object at 0x7f6117d3f790>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

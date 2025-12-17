@@ -13,7 +13,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/dccex_theme.css?v=0b880bd3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/dccex_theme.css?v=1d02ba1c" />
       <link rel="stylesheet" type="text/css" href="../_static/css/big_picture_theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_design_overrides.css?v=de8b2a37" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
@@ -123,12 +123,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/esp32.html">ESP32 (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/stm32-nucleo.html">STMicroelectronics Nucleo (Recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano (Not recommended)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every (Deprecated)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy (Deprecated)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/samd21.html">Microchip SAMD21 (Deprecated)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/motor-boards.html">Supported Motor Drivers</a><ul>
@@ -289,6 +290,70 @@
 <li class="toctree-l2"><a class="reference internal" href="../exrail/getting-started.html">Sequences - an Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/examples.html">Example Objects and Sequences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/tips.html">Tips and Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exrail/cookbooks/index.html">Cookbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/startup-poweron.html">Power On at Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/startup-set-track.html">Define Track Modes at Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/dc-tracks.html">Set a track to DC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/roster-similar-locos.html">Roster Entries for Similar Sound Locos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/index.html">Editing - Tips and Tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/multi-files.html">Multiple Files in EXRAIL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/multiple-command-stations.html">Maintaining multiple command stations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/naming-a-sequence.html">Naming sequences for easy commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/using-call-return.html">Using CALL and RETURN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/using-macros.html">Using C++ Macros</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/driving-trains/index.html">Driving Trains</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/basic.html">Basic driving functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/functions.html">Loco Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/automations.html">AUTOMATIONS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/simple-shuttle.html">Simple shuttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/improved-shuttle.html">Improved shuttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/passing-loop.html">Passing loop shuttle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/turnouts/index.html">Turnouts/Points</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-dcc-turnouts.html">Defining DCC turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-pin-turnouts.html">Defining PIN turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-servo-turnouts.html">Defining Servo turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/facing-turnouts.html">Facing turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/animated-turnouts.html">Animated Turnouts/Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/toggle-with-button.html">Toggle turnouts/points with button or sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/route-button-control.html">Manipulating Route Buttons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/vpins.html">Virtual Bitmap device pins (VPINs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/animation-sensors.html">Buttons and Switches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/estop-button.html">Emergency stop button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/neopixels/index.html">NeoPixel Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/neopixels/neopixels.html">Setting neopixels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/neopixels/signals.html">Neopixel signals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/flashing-signals.html">Signals with flashing (Blink)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/index.html">Flags and Latches</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/flags.html">Flags, Counters and Bitmaps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/latches.html">Latches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/stash.html">Using STASH to remember where locos are parked</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/advanced/index.html">Advanced EXRAIL Sequences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/display-locos-on-oled.html">Display Loco speeds on OLED (Advanced)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/analog-sensors.html">Analog Sensors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/command-filter.html">Command Filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/tca8418-keyboard.html">TCA8418 keyboard scanner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/passing-locos-between-sequences.html">Passing locos between sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/timecontrol.html">Time Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/various-devices/index.html">Supporting Various Additional Devices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/duinoNodes.html">Lew’s Duino Gear boards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/tm-1638.html">TM1638 Buttons, leds and 7 segment display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/trainbrains.html">Trainbrains Devices</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/exrail-command-reference.html">EXRAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/about.html">About and History</a></li>
 </ul>
@@ -346,6 +411,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-cab.html">DCCpp CAB (android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccex-cab.html">DCC-EX CAB (Android and iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle-cab.html">WiThrottle Cab (Android and iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/dccpp-throttle.html">DCC++ Throttle (android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/digitrainspro.html">DigiTrainsPro (Android, iOS, Windows)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/locontrol.html">Locontrol (iOS)</a></li>
@@ -357,6 +423,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/trainnavigator.html">TrainNavigator (iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/train-throttle.html">Train Throttle (Windows, Mac, iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/withrottle.html">WiThrottle (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../throttles/software/dcc-commander.html">DCC Commander (iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../throttles/software/android-apps-on-windows.html">Android Apps on Windows</a></li>
 </ul>
 </li>
@@ -446,12 +513,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/esp32.html">ESP32 (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/stm32-nucleo.html">STMicroelectronics Nucleo (Recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano (Not recommended)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every (Deprecated)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy (Deprecated)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/samd21.html">Microchip SAMD21 (Deprecated)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/pin-vpin-allocations.html">Default Pin/VPin Allocations and Recommendations</a></li>
@@ -627,9 +695,9 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On this page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#standards" id="id13">Standards</a></p>
+<li><p><a class="reference internal" href="#standards" id="id10">Standards</a></p>
 <ul>
-<li><p><a class="reference internal" href="#digital-command-control-dcc" id="id14">Digital Command Control (DCC)</a></p></li>
+<li><p><a class="reference internal" href="#digital-command-control-dcc" id="id11">Digital Command Control (DCC)</a></p></li>
 </ul>
 </li>
 </ul>
@@ -637,38 +705,35 @@
 </aside>
 <p>Standards and technical references the <a href="../index.html"><span class="dccex-suffix">DCC-</span><span class="dccex-prefix">EX</span></a> components are build onto.</p>
 <section id="standards">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Standards</a><a class="headerlink" href="#standards" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Standards</a><a class="headerlink" href="#standards" title="Link to this heading"></a></h2>
 <section id="digital-command-control-dcc">
-<h3><a class="toc-backref" href="#id14" role="doc-backlink">Digital Command Control (DCC)</a><a class="headerlink" href="#digital-command-control-dcc" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Digital Command Control (DCC)</a><a class="headerlink" href="#digital-command-control-dcc" title="Link to this heading"></a></h3>
 <section id="national-model-railroad-association-nmra">
 <h4>National Model Railroad Association (NMRA)<a class="headerlink" href="#national-model-railroad-association-nmra" title="Link to this heading"></a></h4>
 <p>The standards for the DCC protocol.</p>
 <section id="standards-s">
 <h5>Standards (S-)<a class="headerlink" href="#standards-s" title="Link to this heading"></a></h5>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/s-9.1_electrical_standards_for_digital_command_control_2021.pdf">S-9.1</a>: Electrical Standards for Digital Command Control</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/s-92-2004-07.pdf">S-9.2</a>: Communication Standards for Digital Command Control</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/S/s-9.1_electrical_standards_for_digital_command_control.pdf">S-9.1</a>: Electrical Standards for Digital Command Control</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/S/s-92-2004-07.pdf">S-9.2</a>: Communication Standards for Digital Command Control</p></li>
 </ul>
 </section>
 <section id="technical-notes-tn">
 <h5>Technical Notes (TN-)<a class="headerlink" href="#technical-notes-tn" title="Link to this heading"></a></h5>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn-9_2023.pdf">TN-9</a>: Wiring for DC &amp; DCC</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn9.1.1_nmra_dcc_decoder_test_user_manual.pdf">TN-9.1.1</a>: NMRA DCC Decoder Test User Manual</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn9.1.2_sender_board_theory_of_operation.pdf">TN-9.1.2_SBT</a>: Sender Board Theory of Operation</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn9.1.3_sender_v3_getting_started_guide.pdf">TN-9.1.3</a>: Sender V3 Getting Started Guide</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn-9.1.1.3_21mtc_decoder_interface.pdf">TN-9.1.1.3</a>: 21 MTC Decoder Interface</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn-9.1.1.4_plux_interface_1.pdf">TN-9.1.1.4</a>: PluX Decoder Interface</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn-9.1.1.5_next18_next18-s_decoder_interface.pdf">TN-9.1.1.5</a>: Next 18 and Next 18S  Decoder Interface</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn-9.1.2_power_station_interface.pdf">TN-9.1.2_PSI</a>: Power Station Interface</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/tn-9.2.1.1_advanced_extended_packet_formats.pdf">TN-9.2.1.1</a>: DCC Advanced Extended Packet Formats</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/Elec/TN/tn-9.pdf">TN-9</a>: Wiring for DC &amp; DCC</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TN/tn-9.1.1.3_21mtc_decoder_interface.pdf">TN-9.1.1.3</a>: 21 MTC Decoder Interface</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TN/tn-9.1.1.4_plux_interface_1.pdf">TN-9.1.1.4</a>: PluX Decoder Interface</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TN/tn-9.1.1.5_next18_next18-s_decoder_interface.pdf">TN-9.1.1.5</a>: Next 18 and Next 18S  Decoder Interface</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TN/tn-9.1.2_power_station_interface.pdf">TN-9.1.2_PSI</a>: Power Station Interface</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TN/tn-9.2.1.1_advanced_extended_packet_formats.pdf">TN-9.2.1.1</a>: DCC Advanced Extended Packet Formats</p></li>
 </ul>
 </section>
 <section id="technical-informations-ti">
 <h5>Technical Informations (TI-)<a class="headerlink" href="#technical-informations-ti" title="Link to this heading"></a></h5>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/ti-9.1.1_sources_for_connectors_for_dcc.pdf">TI-9.1.1</a>: Sources for Connectors for DCC Decoders</p></li>
-<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NRMA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/pdf/technotes/ti-9.1.1_sources_for_connectors_for_dcc.pdf">TI-9.2.3</a>: Serial User Standard Interface for DCC</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TI/ti-9.1.1_sources_for_connectors_for_dcc.pdf">TI-9.1.1</a>: Sources for Connectors for DCC Decoders</p></li>
+<li><p><a class="reference external" href="https://www.nmra.org/index-nmra-standards-and-recommended-practices">NMRA</a> <a class="reference external" href="https://www.nmra.org/sites/default/files/standards/sandrp/DCC/TI/TI-9.2.3_SUSI_05_03.pdf">TI-9.2.3</a>: Serial User Standard Interface for DCC</p></li>
 </ul>
 </section>
 </section>
@@ -697,7 +762,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f9c234c8df0>
+    <jinja2.runtime.BlockReference object at 0x7f611a3acf70>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

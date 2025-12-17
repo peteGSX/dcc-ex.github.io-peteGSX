@@ -13,7 +13,7 @@
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/dccex_theme.css?v=0b880bd3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/dccex_theme.css?v=1d02ba1c" />
       <link rel="stylesheet" type="text/css" href="../_static/css/big_picture_theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/sphinx_design_overrides.css?v=de8b2a37" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
@@ -123,12 +123,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/esp32.html">ESP32 (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/stm32-nucleo.html">STMicroelectronics Nucleo (Recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano (Not recommended)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every (Deprecated)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy (Deprecated)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/samd21.html">Microchip SAMD21 (Deprecated)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/motor-boards.html">Supported Motor Drivers</a><ul>
@@ -289,6 +290,70 @@
 <li class="toctree-l2"><a class="reference internal" href="../exrail/getting-started.html">Sequences - an Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/examples.html">Example Objects and Sequences</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/tips.html">Tips and Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../exrail/cookbooks/index.html">Cookbooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/startup-poweron.html">Power On at Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/startup-set-track.html">Define Track Modes at Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/dc-tracks.html">Set a track to DC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/roster-similar-locos.html">Roster Entries for Similar Sound Locos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/index.html">Editing - Tips and Tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/multi-files.html">Multiple Files in EXRAIL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/multiple-command-stations.html">Maintaining multiple command stations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/naming-a-sequence.html">Naming sequences for easy commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/using-call-return.html">Using CALL and RETURN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/editing-tricks/using-macros.html">Using C++ Macros</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/driving-trains/index.html">Driving Trains</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/basic.html">Basic driving functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/functions.html">Loco Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/automations.html">AUTOMATIONS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/simple-shuttle.html">Simple shuttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/improved-shuttle.html">Improved shuttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/driving-trains/passing-loop.html">Passing loop shuttle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/turnouts/index.html">Turnouts/Points</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-dcc-turnouts.html">Defining DCC turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-pin-turnouts.html">Defining PIN turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/defining-servo-turnouts.html">Defining Servo turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/facing-turnouts.html">Facing turnouts/points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/animated-turnouts.html">Animated Turnouts/Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/turnouts/toggle-with-button.html">Toggle turnouts/points with button or sensor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/route-button-control.html">Manipulating Route Buttons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/vpins.html">Virtual Bitmap device pins (VPINs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/animation-sensors.html">Buttons and Switches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/estop-button.html">Emergency stop button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/neopixels/index.html">NeoPixel Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/neopixels/neopixels.html">Setting neopixels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/neopixels/signals.html">Neopixel signals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/flashing-signals.html">Signals with flashing (Blink)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/index.html">Flags and Latches</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/flags.html">Flags, Counters and Bitmaps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/latches.html">Latches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/flags-and-latches/stash.html">Using STASH to remember where locos are parked</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/advanced/index.html">Advanced EXRAIL Sequences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/display-locos-on-oled.html">Display Loco speeds on OLED (Advanced)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/analog-sensors.html">Analog Sensors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/command-filter.html">Command Filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/tca8418-keyboard.html">TCA8418 keyboard scanner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/advanced/passing-locos-between-sequences.html">Passing locos between sequences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/timecontrol.html">Time Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../exrail/cookbooks/various-devices/index.html">Supporting Various Additional Devices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/duinoNodes.html">Lew’s Duino Gear boards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/tm-1638.html">TM1638 Buttons, leds and 7 segment display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../exrail/cookbooks/various-devices/trainbrains.html">Trainbrains Devices</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/exrail-command-reference.html">EXRAIL Command Reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../exrail/about.html">About and History</a></li>
 </ul>
@@ -346,6 +411,7 @@
 <li class="toctree-l3"><a class="reference internal" href="software/cab-engineer.html">Cab Engineer: DCC Throttle (Android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/dccpp-cab.html">DCCpp CAB (android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/dccex-cab.html">DCC-EX CAB (Android and iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software/withrottle-cab.html">WiThrottle Cab (Android and iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/dccpp-throttle.html">DCC++ Throttle (android)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/digitrainspro.html">DigiTrainsPro (Android, iOS, Windows)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/locontrol.html">Locontrol (iOS)</a></li>
@@ -357,6 +423,7 @@
 <li class="toctree-l3"><a class="reference internal" href="software/trainnavigator.html">TrainNavigator (iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/train-throttle.html">Train Throttle (Windows, Mac, iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/withrottle.html">WiThrottle (iOS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software/dcc-commander.html">DCC Commander (iOS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="software/android-apps-on-windows.html">Android Apps on Windows</a></li>
 </ul>
 </li>
@@ -446,12 +513,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-mega.html">Arduino Mega (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/esp32.html">ESP32 (Recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/stm32-nucleo.html">STMicroelectronics Nucleo (Recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/arduino-uno.html">Arduino Uno (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano.html">Arduino Nano (Not recommended)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/microcontrollers.html">Beta microcontrollers - STM32 Nucleo, ESP32, and SAMD</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/wifi-mega.html">Mega+WiFi (Not recommended)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/nano-every.html">Nano Every (Deprecated)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/teensy.html">Teensy (Deprecated)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reference/hardware/microcontrollers/samd21.html">Microchip SAMD21 (Deprecated)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../reference/hardware/pin-vpin-allocations.html">Default Pin/VPin Allocations and Recommendations</a></li>
@@ -659,7 +727,7 @@ i.e. ‘COM12’ in the Windows Device Manager becomes ‘/dev/ttyS11’</p>
 <a class="responsive-image reference internal image-reference" href="../_images/SerialToIPGUI.png"><img alt="SerialToIPGUI" class="responsive-image" src="../_images/SerialToIPGUI.png" style="width: 181.0px; height: 190.0px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig 379: </span><span class="caption-text">SerialToIPGUI</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+<p><span class="caption-number">Fig 380: </span><span class="caption-text">SerialToIPGUI</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -732,7 +800,7 @@ i.e. ‘COM12’ in the Windows Device Manager becomes ‘/dev/ttyS11’</p>
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f9c2b563b80>
+    <jinja2.runtime.BlockReference object at 0x7f6117c69ae0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
